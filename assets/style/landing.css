@@ -1,0 +1,39 @@
+*{
+
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	margin-top: 20px;
+}
+
+.carousel-itemactive {
+	width: 20px;
+	height: 20px;
+}
+
+
+.carousel-item {
+	width: 20px;
+	height: 20px;
+}
+
+.jumbotron {
+	background-image: url(./assets/images/mainicon.jpg);
+	text-align: center;
+	color: red;
+	background-size: cover;
+}
+
+
+
+.card {
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.row {
+	margin: 10px auto;
+}
