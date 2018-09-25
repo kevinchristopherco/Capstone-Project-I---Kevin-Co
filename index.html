@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+    <!--personalized css-->
+    <link rel="stylesheet" type="text/css" href="./assets/style/landing.css">
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <!-- Javascript -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap.js -->
+    <script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+	<title>Landing</title>
+</head>
+<body>
+  <div class="container-fluid" id="home-container">
+     <!--navigation section -->
+    <div class="container-fluid" id="nav-container">
+      <div class="row clear">
+        <div class="section navigator col-lg-12 col-md-12 col-sm-12">
+             <!-- navbar -->
+             <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+             <!-- brand -->
+             <!-- nav-brand has built-in features stored in JS folder and will be passed on.-->
+             <a class="navbar-brand" href="#"></a>
+             <!-- end of brand -->
+             <!-- burger -->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+           <!--nav-toggler-icon gives an icon for burger-->
+           <span class="navbar-toggler-icon"></span>
+             </button>
+             <!-- end of burger -->
+             <!-- nav items -->
+             <div class="collapse navbar-collapse" id="navbar-nav">
+              <img src="./assets/images/mainicon.jpg" id="mainicon" alt="icon" width="80px" height="40px" class="center">
+              <img src="./assets/images/maintitle.jpg" id="maintitle" alt="home page main title" width="240px" height="90px" class="center">
+                  <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html"><i class="fas fa-home">Home</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html"><i class="fas fa-users">About Us</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html"><i class="fas fa-phone">Contact Us</i></a>
+                </li>
+                 <li class="nav-item">
+
+                        <a class="nav-link" href="./dishes/dishes.html"><i class="fas fa-utensils">Dishes</i> 
+                       </a>                       
+                        
+                   </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./ingredients/ingredients.html"><i class="fas fa-bong">Ingredients</i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./equipment/equipment.html"><i class="fas fa-toolbox">Equipment</i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./stores/stores.html"><i class="fas fa-store">Stores</i></a>
+                </li>
+                
+              </ul>
+              </div>
+             </nav>
+        </div>
+      </div>
+    </div>   
+    <!--main container - jumbotron -->
+    <div class="container-fluid" id="main-container">
+        <div class="row clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+                <div class="jumbotron jumbotron-fluid">
+        
+                    <div class="container" id="display-container">
+                        <h1 class="display4">Food Is Life</h1>
+                        <p class="lead">Want to gain a deeper understanding in making food?</p>
+                        <button>Take the bowl & whisk to start the culinary journey!
+                            <a href="./home.html">
+                            <img src="./assets/images/bowlwhisk.jpg" alt="home page main logo" width="60px" height="50px" class="center"></a>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+   
+  </div>
+
+</body>
+
+</html>

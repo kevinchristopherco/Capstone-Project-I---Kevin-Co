@@ -6,7 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-    <!--<link rel="stylesheet" type="text/css" href="./css/stores.css">-->
+    <!-- personal css -->
+    <link rel="stylesheet" type="text/css" href="./style/store.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+
     <!-- Javascript -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"
@@ -16,59 +24,157 @@
 
     <!-- Bootstrap.js -->
     <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
-  <title>Ingredients</title>
+  <title>Stores</title>
 </head>
 <body>
-	<img src="../assets/images/maintitle.jpg" alt="home page main title">
-   <img src="../assets/images/mainicon.jpg" alt="home page main logo">
-   <i class="far fa-search"></i><form action="method">
-      <input type="text" name="search" placeholder="search">
-   </form>
-   <a href="https://www.facebook.com/The-Foodie-Craftsman-299889067277926/?modal=admin_todo_tour" target="_blank"><button>Facebook</button></a>
-   <a href="https://www.instagram.com/thefoodiecraftsman/?hl=en" target="_blank"><button>Instagram</button></a>
-   <a href="https://twitter.com/CraftsmanFoodie" target="_blank"><button>Twitter</button></a>
-   <ul>
-      <li><a href="../welcome.html">Home</a></li>
-      <li><a href="../ingredients/ingredients1.html">Ingredients</a></li>
-      <li><a href="../equipment/equipment/equipment1.html">Equipment</a></li>
-      <li><a href="../dishes/dishes.html">Dishes</a></li>
-      <li><a href="./stores.html">Stores</a></li>
-    </ul>
+  <div class="container-fluid" id="home-container">  
+    <!--navigation section -->
+    <div class="container-fluid" id="nav-container">
+      <div class="row-fluid clear">
+        <div class="section navigator col-lg-12 col-md-12 col-sm-12">
+             <!-- navbar -->
+             <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+             <!-- brand -->
+             <!-- nav-brand has built-in features stored in JS folder and will be passed on.-->
+             <a class="navbar-brand" href="#"></a>
+             <!-- end of brand -->
+             <!-- burger -->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+             <!--nav-toggler-icon gives an icon for burger-->
+             <span class="navbar-toggler-icon"></span>
+             </button>
+             <!-- end of burger -->
+             <!-- nav items -->
+             <div class="collapse navbar-collapse" id="navbar-nav">
+                <img src="../assets/images/mainicon.jpg" id="mainicon" alt="icon" width="80px" height="40px" class="center">
+                <img src="../assets/images/maintitle.jpg" id="maintitle" alt="home page main title" width="240px" height="90px" class="center">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../home.html" id="homes"><i class="fas fa-home">Home</i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../about.html" id="abouts"><i class="fas fa-users">About Us</i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../contact.html" id="contacts"><i class="fas fa-phone">Contact Us</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../dishes/dishes.html" id="dishes"><i class="fas fa-utensils">Dishes</i> 
+                       </a>                         
+                    </li>
 
-   <h1><strong>Stores</strong></h1>
-    
-   <h2>Boxination</h2>
-   <img src="./images/boxination1.jpg" alt="boxination exterior">
-   <img src="./images/boxination3.jpg" alt="boxination interior">
-   <p>This baking store sells products like confectionary sugar, candies, cookies, almonds. Its flagship products are the boxes. Some products that I bought here were bread flour and wax paper as these were readily available in this store.</p><br>
-   <h4>Location: <a href="https://www.google.com/maps/place/BoxiNation/@14.6387598,121.0238138,17z/data=!3m1!4b1!4m5!3m4!1s0x3397b651141f4355:0x7285a9c8a98a6642!8m2!3d14.6387598!4d121.0260025?hl=en" target="_blank"> 13 West Avenue, Quezon City</a></h4>
-   <hr>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../ingredients/ingredients.html" id="ingredients"><i class="fas fa-bong">Ingredients</i></a>
+                    </li>
 
-   <h2>Chocolate Lovers</h2>
-   <img src="./images/chocolatelovers1.jpg" alt="chocolate lovers exterior">
-   <img src="./images/chocolatelovers2.jpg" alt="chocolate lovers interior">
-   <p>This baking store appears as a huge chocolate castle like place. It sells products like confectioners’ sugar and cupcake holder sheets and other baking goods.</p><br>
-   <h4>Location: <a href="https://www.google.com/maps/place/Chocolate+Lover+Inc./@14.5946765,120.9956955,13z/data=!4m8!1m2!2m1!1schocolate+lovers!3m4!1s0x3397b7c5b8ee1b07:0xcbb7f568297021e9!8m2!3d14.615225!4d121.046854?hl=en" target="_blank"> 45 P. Tuazon Blvd, Quezon City</a></h4>
-   <hr>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../equipment/equipment.html" id="equipments"><i class="fas fa-toolbox">Equipment</i></a>
+                    </li>
 
-   <h2>Puregold Supermarket (Quezon Avenue Branch)</h2>
-   <img src="./images/puregold1.jpg" alt="puregold exterior">
-   <img src="./images/puregold2.jpg" alt="puregold interior">
-   <p>The Puregold Supermarket along QA houses a huge variety of products such as baking needs, cereal, bread, dairy, meat, fruit, vegetables. This is one of the known Puregold branches that I feel is a good source of Cavendish bananas they are always found protected in plastic.</p><br>
-   <h4>Location: <a href="https://www.google.com/maps/place/Puregold+Quezon+Ave./@14.6414059,121.0297928,17z/data=!3m1!4b1!4m5!3m4!1s0x3397b654e831fd89:0x788ed6408d7bcb7!8m2!3d14.6414059!4d121.0319815?hl=en" target="_blank"> Quezon Avenue, Quezon City</a></h4>
-   <hr>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./stores.html" id="stores"><i class="fas fa-store">Stores</i></a>
+                    </li>
+                
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+      </div>   
+      <!-- main section -->
+      <div class="container-fluid" id="main-container">
+        <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+                <br>
+                <h1><strong>Stores</strong></h1>
+                <p></p> 
+                <hr>            
+            </div>
+        </div>
 
-   <h2>Rustan's Supermarket (Tomas Morato Avenue Branch)</h2>
-   <img src="./images/rustans1.jpg" alt="rustans exterior">
-   <img src="./images/rustans4.jpg" alt="rustans interior">
+        <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+                <h2>Boxination</h2>
+                <img src="./images/boxination1.jpg" alt="boxination1" width="320px" height="320px" class="img-fluid">
+   
+                <img src="./images/boxination2.jpg" alt="boxination3" width="320px" height="320px" width="320px" class="img-fluid">
 
-   <p>When compared with other supermarket chains like Puregold, Rustan’s generally houses a lesser variety of ingredients that are slightly more pricey. But I would seek out this particular branch along Tomas Morato for products such as Muscovado Sugar and Coco Sugar that are critical ingredients for my cookies. </p><br>
-   <h4>Location: <a href="https://www.google.com/maps/place/Rustan's+Supermarket+-+Tomas+Morato/@14.636023,121.035416,15z/data=!4m5!3m4!1s0x0:0x8f709010095c6ff0!8m2!3d14.636023!4d121.035416?hl=en" target="_blank"> Il Terrazo Mall, Tomas Morato Avenue, Quezon City</a></h4>
+                <img src="./images/boxination3.jpg" alt="boxination3" width="320px" height="320px" width="320px" class="img-fluid">
+                <br>
+                
+                
+                <p class="description"><strong>Description:</strong> This baking store sells products like confectionary sugar, candies, cookies, almonds. Its flagship products are the boxes. Bread flour and wax paper are also readily available in this store.</p>
+                <p class="description"><strong>Location:</strong> <a href="https://www.google.com/maps/place/BoxiNation/@14.6387598,121.0238138,17z/data=!3m1!4b1!4m5!3m4!1s0x3397b651141f4355:0x7285a9c8a98a6642!8m2!3d14.6387598!4d121.0260025?hl=en" target="_blank"> 13 West Avenue, Quezon City</a></p>
+                <hr>
+            </div>
+        </div>
 
-<small><i class="far fa-copyright"></i>COPYRIGHT 2018 ALL RIGHTS RESERVED. THE FOODIE CRAFTSMAN. This website is for educational purposes only.</small>
+        <div class="row-fluid clear">
+          <div class="section main col-lg-12 col-md-12 col-sm-12">
+             <h2>Chocolate Lovers</h2>
+             <img src="./images/chocolatelover4.jpg" alt="chocolatelovers4" width="320px" height="320px" class="img-fluid">
+             <img src="./images/chocolatelovers2.jpg" alt="chocolatelover2" width="320px" height="320px" class="img-fluid">
+             <img src="./images/chocolatelovers3.jpg" alt="chocolatelover3" width="320px" height="320px" class="img-fluid">
+             <br>
+             <p class="description"><strong>Description:</strong> This baking store appears as a huge chocolate castle like place. It sells products like confectioners sugar , cupcake holder sheets and other baking goods.</p>
+             <p class="description"><strong>Location:</strong> <a href="https://www.google.com/maps/place/Chocolate+Lover+Inc./@14.5946765,120.9956955,13z/data=!4m8!1m2!2m1!1schocolate+lovers!3m4!1s0x3397b7c5b8ee1b07:0xcbb7f568297021e9!8m2!3d14.615225!4d121.046854?hl=en" target="_blank"> 45 P. Tuazon Blvd, Quezon City</a></p>
+             <hr>
+          </div>
+        </div>
 
-   <small>CONTACT US</small>
-   <small>Email: thefoodiecraftsman@gmail.com | Tel: +639178151032
+        <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+                <h2>Puregold Supermarket (Quezon Avenue Branch)</h2>
+                <img src="./images/puregold1.jpg" alt="puregold1" width="320px" height="320px" class="img-fluid">
+                <img src="./images/puregold4.jpg" alt="puregold4" width="320px" height="320px" class="img-fluid">
+                <img src="./images/puregold3.jpg" alt="puregold3" width="320px" height="320px" class="img-fluid">
+                <br>
+                
+                <p class="description"><strong>Description:</strong> The Puregold Supermarket along QA houses a huge variety of products such as baking needs, cereal, bread, dairy, meat, fruit, vegetables. This is one of the known Puregold branches that I feel is a good source of Cavendish bananas since they are always found protected in plastic.</p>
+                <p class="description"><strong>Location:</strong> <a href="https://www.google.com/maps/place/Puregold+Quezon+Ave./@14.6414059,121.0297928,17z/data=!3m1!4b1!4m5!3m4!1s0x3397b654e831fd89:0x788ed6408d7bcb7!8m2!3d14.6414059!4d121.0319815?hl=en" target="_blank"> Quezon Avenue, Quezon City</a></p>
+                <hr>    
+            </div>
+        </div>
+
+        <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+                <h2>Rustan's Supermarket (Tomas Morato Avenue Branch)</h2>
+                <img src="./images/rustans1.jpg" alt="rustans1" width="320px" height="320px"class="img-fluid">
+                <img src="./images/rustans2.jpg" alt="rustans2" width="320px" height="320px"class="img-fluid">
+                <img src="./images/rustans3.jpg" alt="rustans3" width="320px" height="320px"class="img-fluid">
+                <br>
+                
+                <p class="description"><strong>Description:</strong> When compared with other supermarket chains like Puregold, Rustan’s generally houses a lesser variety of ingredients that are slightly more pricey. But I would seek out this particular branch along Tomas Morato for products such as Muscovado Sugar and Coco Sugar because they are critical ingredients for my cookies. </p>
+                <p class="description"><strong>Location:</strong> <a href="https://www.google.com/maps/place/Rustan's+Supermarket+-+Tomas+Morato/@14.636023,121.035416,15z/data=!4m5!3m4!1s0x0:0x8f709010095c6ff0!8m2!3d14.636023!4d121.035416?hl=en" target="_blank"> Il Terrazo Mall, Tomas Morato Avenue, Quezon City</a></p>
+                
+              </div>
+          </div>
+
+          <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+                <br>
+             
+
+              <!-- Back to top button -->
+                <a href="./stores.html" class="button"><button>Get back up</button></a>
+            </div>
+              
+          </div>
+     </div>
+
+	   <!-- footer section -->
+     <div class="container-fluid" id="footer-container">
+      <div class="row-fluid clear">
+          <div class="section footer col-lg-12 col-md-12 col-sm-12">
+              <small><i class="far fa-copyright"></i>COPYRIGHT 2018 ALL RIGHTS RESERVED. THE FOODIE CRAFTSMAN. This website is for educational purposes only.</small>
+              <hr>
+              <a href="https://www.facebook.com/The-Foodie-Craftsman-299889067277926/?modal=admin_todo_tour" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="https://www.instagram.com/thefoodiecraftsman/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="https://twitter.com/?precache=1" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+      </div>
+     </div>
+    </div>
 
 </body>
 

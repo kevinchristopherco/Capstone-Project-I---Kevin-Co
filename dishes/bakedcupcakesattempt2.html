@@ -4,162 +4,349 @@
   <meta charset="utf-8">
     <meta name="viewport" content="width=device=width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <!--<link rel="stylesheet" type="text/css" href="./css/ingredients1.css">-->
-  <title>Dishes</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <!-- personal css -->
+    <link rel="stylesheet" type="text/css" href="./style/bakedcookiesattempt2.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <!-- Javascript -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap.js -->
+    <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+  <title>Baked Cupcakes with Banana Frosting</title>
 </head>
 <body>
-   <img src="../assets/images/maintitle.jpg" alt="home page main title">
-   <img src="../assets/images/mainicon.jpg" alt="home page main logo">
-   <i class="far fa-search"></i><form action="method">
-      <input type="text" name="search" placeholder="search">
-   </form>
-   <a href="https://www.facebook.com/The-Foodie-Craftsman-299889067277926/?modal=admin_todo_tour" target="_blank"><button>Facebook</button></a>
-   <a href="https://www.instagram.com/thefoodiecraftsman/?hl=en" target="_blank"><button>Instagram</button></a>
-   <a href="https://twitter.com/CraftsmanFoodie" target="_blank"><button>Twitter</button></a>
-   <ul>
-      <li><a href="../welcome.html">Home</a></li>
-      <li><a href="../ingredients/ingredients1.html">Ingredients</li>
-      <li><a href="../equipment/equipment1.html">Equipment</a></li>
-      <li><a href="./dishes.html">Dishes</a></li>
-      <li><a href="../stores/stores.html">Stores</a></li>
-    </ul>
+   <div class="container-fluid" id="home-container">  
+    <!--navigation section -->
+    <div class="container-fluid" id="nav-container">
+      <div class="row-fluid clear">
+        <div class="section navigator col-lg-12 col-md-12 col-sm-12">
+             <!-- navbar -->
+             <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+             <!-- brand -->
+             <!-- nav-brand has built-in features stored in JS folder and will be passed on.-->
+             <a class="navbar-brand" href="#"></a>
+             <!-- end of brand -->
+             <!-- burger -->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+             <!--nav-toggler-icon gives an icon for burger-->
+             <span class="navbar-toggler-icon"></span>
+             </button>
+             <!-- end of burger -->
+             <!-- nav items -->
+             <div class="collapse navbar-collapse" id="navbar-nav">
+                <img src="../assets/images/mainicon.jpg" id="mainicon" alt="icon" width="80px" height="40px" class="center">
+                <img src="../assets/images/maintitle.jpg" id="maintitle" alt="home page main title" width="240px" height="90px" class="center">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../home.html" id="homes"><i class="fas fa-home">Home</i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../about.html" id="abouts"><i class="fas fa-users">About Us</i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../contact.html" id="contacts"><i class="fas fa-phone">Contact Us</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dishes.html" id="dishes"><i class="fas fa-utensils">Dishes</i> 
+                       </a>                         
+                    </li>
 
-   <h1><strong>Dishes</strong></h1>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../ingredients/ingredients.html" id="ingredients"><i class="fas fa-bong">Ingredients</i></a>
+                    </li>
 
-   <h2>Baked Cupcakes with Banana Frosting (Attempt #2)
+                    <li class="nav-item">
+                      <a class="nav-link" href="../equipment/equipment.html" id="equipments"><i class="fas fa-toolbox">Equipment</i></a>
+                    </li>
 
-   <h3>Ingredients</h3>
-   <ul>
-      <li>¾ cup or 168 g butter, unsalted (for the batter dough) </li>
-      <li>¾ cup or 150 g granulated sugar (for the batter dough)</li>
-      <li>1 ½  cups confectioner powdered sugar</li>
-      <li>1 tablespoon vanilla extract  (McCormick)</li>
-      <li>2 1/3 cups bread purpose flour</li>
-      <li>1 cup or 250 ml full cream milk, room temperature (Bear Brand – for the batter dough)</li>
-      </li>
-      <li>4 medium eggs at room temperature</li>
-      <li>2 teaspoon or 10g baking powder (Queen Double Acting Baking Powder)</li>
-      <li>1 teaspoon or 5g iodized fine salt (McCormick)</li>
-      <li>231 g Cavendish banana </li>
-      <li>4 tablespoons brewed Blend 45 instant coffee (for the frosting)</li>
-      <li>¼ cup or 57 g butter, unsalted (for the frosting)</li>
-   </ul>
-   <hr>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../stores/stores.html" id="stores"><i class="fas fa-store">Stores</i></a>
+                    </li>
+                
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+      </div>   
+
+      <!-- main section -->
+      <div class="container-fluid" id="main-container">
+        <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+               <h1>Baked Cupcakes with Banana Frosting</h1>
+               <br>
+               <hr>
+            </div>
+         </div>
+         <!-- List of Ingredients -->
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">          
+               <h3>Ingredients</h3>
+               <ul>
+                  <li>¾ cup or 168 g butter, unsalted (for the batter dough)</li>
+                  <li>¾ cup or 150 g granulated sugar (for the batter dough)</li>
+                  <li>1 ½  cups confectioner powdered sugar</li>
+                  <li>1 tablespoon vanilla extract  (McCormick)</li>
+                  <li>2 1/3 cups bread purpose flour</li>
+                  <li>1 cup or 250 ml full cream milk, room temperature (Bear Brand – for the batter dough)</li>
+                  <li>4 medium eggs at room temperature</li>
+                  <li>2 teaspoon or 10g baking powder (Queen Double Acting Baking Powder)</li>
+                  <li>1 teaspoon or 5g iodized fine salt (McCormick)</li>
+                  <li>231 g Cavendish banana</li>
+                  <li>4 tablespoons brewed Blend 45 instant coffee (for the frosting)</li>
+                  <li>¼ cup or 57 g butter, unsalted (for the frosting)</li>
+               </ul>
+               <hr>
+            </div>
+         </div>
+         <!-- Procedure -->
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+               <h3>Procedure</h3>
+            </div>
+         </div>
+
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcupcakesattempt2/1.1.jpg" class="bigpic"><img src="./images/bakedcupcakesattempt2/1.1.jpg" alt="step 1" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">                
+                <p>1) In a large mixing bowl, I used an egg whisk to manually cream the butter, sugar together until light and fluffy.</p>               
+              </div>
+             </div>
+         </div>
    
-   <h3>Procedure</h3>
-   <ol>
-      <li>In a large mixing bowl, I used an egg whisk to manually cream the butter, sugar together until light and fluffy.</li>
-      <img src="./images/bakedcupcakesattempt2/1.1.jpg" alt="step 1"><br>
-     
-
-      <li>I measured one cup of milk on a glass beaker and put the vanilla extract. I cracked open three eggs and placed them on a glass bowl. </li>
-      <img src="./images/bakedcupcakesattempt2/2.1.jpg" alt="step 2"><br>
- 
-
-      <li>I poured the milk containing the vanilla extract on the mixing bowl containing the dry ingredients, butter & sugar, and then included the eggs. I mixed them together with a whisk until thoroughly combined.</li>
-      <img src="./images/bakedcupcakesattempt2/3.1.jpg" alt="step 3"><br>
- 
-
-      <li>I added in the bread flour and baking powder, salt after sifting with a sieve. I mixed all the ingredients until just combined. I also scraped the sides and the bottom of the bowl to make sure everything gets mixed in.  </li>
-      <img src="./images/bakedcupcakesattempt2/4.1.jpg" alt="step 4"><br>
- 
-      <li>I dissolved 8 g blend45 coffee powder on 1 cup or 250 ml water heated in a thermos.</li>
-      <img src="./images/bakedcupcakesattempt2/5.1.jpg" alt="step 5"><br>
-
-      <li>I put 1 scoopful of the batter on a cupcake sheet cooked by batches (six cupcakes per batch) on a baking tray at the top level rack in the oven pre-heated to 175 degrees Celsius.:</li>
-          <ul>
-             <li>Batch #1 – 16:30 minutes</li>
-             <li>Batch #2 – 15:30 minutes</li>
-             <li>Batch #3 – 14:30 minutes</li>
-             <li>Batch #4 – 13:30 minutes</li>
-          </ul>
-      <img src="./images/bakedcupcakesattempt2/6.1.jpg" alt="step 6"><br>
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcupcakesattempt2/2.1.jpg" class="bigpic"><img src="./images/bakedcupcakesattempt2/2.1.jpg" alt="step 2" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>2) I measured one cup of milk on a glass beaker and put the vanilla extract. I cracked open four eggs and placed them on a glass bowl.</p>
+                
+              </div>
+             </div>
+         </div>
 
 
-      <li>I removed every batch of cupcakes that were baked from the oven and transferred to a steel wire rack to cool completely.  </li>
-      <img src="./images/bakedcupcakesattempt2/7.1.jpg" alt="step 7"><br>
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcupcakesattempt2/3.1.jpg" class="bigpic"><img src="./images/bakedcupcakesattempt2/3.1.jpg" alt="step 3" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>3) I poured the milk containing the vanilla extract on the mixing bowl containing the dry ingredients, butter & sugar, and then included the eggs. I mixed them together with a whisk until thoroughly combined.</p>
+                
+              </div>
+             </div>
+         </div>
 
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcupcakesattempt2/4.1.jpg" class="bigpic"><img src="./images/bakedcupcakesattempt2/4.1.jpg" alt="step 4" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>4) I added in the bread flour and baking powder, salt after sifting with a sieve. I mixed all the ingredients until just combined. I also scraped the sides and the bottom of the bowl to make sure everything gets mixed in.  </p>
+                
+              </div>
+             </div>
+         </div>
 
-      <li>I sliced the Cavendish bananas and mashed with a potato masher. Then I stored the bananas in the refrigerator for about 30 minutes to bring out their vanilla flavor. Each bowl had 141 bananas.</li>
-      <img src="./images/bakedcupcakesattempt2/8.1.jpg" alt="step 8"><br>
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcupcakesattempt2/5.2.jpg" class="bigpic"><img src="./images/bakedcupcakesattempt2/5.2.jpg" alt="step 4" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>5) I dissolved 8 g blend45 coffee powder on 1 cup or 250 ml water heated in a thermos.</p>
+                
+              </div>
+             </div>
+         </div>
 
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcupcakesattempt2/6.1.jpg" class="bigpic"><img src="./images/bakedcupcakesattempt2/6.1.jpg" alt="step 6" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>6) I put 1 scoopful of the batter on a cupcake sheet cooked by batches (six cupcakes per batch) on a baking tray at the top level rack in the oven pre-heated to 175 degrees Celsius.:
+                <ul>
+                  <li>Batch #1 – 16 minutes, 30 seconds</li>
+                  <li>Batch #2 – 15 minutes, 30 seconds</li>
+                  <li>Batch #3 – 14 minutes, 30 seconds</li>
+                  <li>Batch #4 – 13 minutes, 30 seconds</li>
+                </ul>
+                </p>
+                
+              </div>
+             </div>
+         </div>
 
-      <li>For the frosting, I mixed together the confectioner sugar, the Cavendish bananas from the refrigerator, brewed instant coffee, and butter: </li>
-          <ul>
-             <li>Frosting Mixture #1: 1/8 unsalted butter + ¾ cup confectioner sugar + 2 tablespoons brewed Blend 45 instant coffee + 124 g mashed Cavendish bananas</li>
-             <li>Frosting Mixture #2: 1/8 unsalted butter + ¾ cup confectioner sugar + 2 tablespoons brewed Blend 45 instant coffee + 74 g mashed Cavendish bananas</li>
-          </ul>
-      <img src="./images/bakedcupcakesattempt2/9.1.jpg" alt="step 9"><br>
-
-      <li>I placed around one table spoon of the filling on top of each baked cupcake and cooled all the cupcakes in the refrigerator.</li>
-          <ul>
-             <li>Storage time: Saturday 6:00 PM  Monday 4:45 PM</li>
-          </ul>
-      <img src="./images/bakedcupcakesattempt2/10.1.jpg" alt="step 10">
-   </ol>
-   <hr>
-
-   <h3>Feedback</h3>
-   <ul>
-      <li>Batch# 1</li>
-         <ul>
-            <li>Texture: </li>
-            <li>Taste/Flavor:  </li>
-            <li>Appearance: </li>
-         </ul><br>
-      <li>Batch# 2</li>
-         <ul>
-            <li>Texture: </li>
-            <li>Taste: </li>
-            <li>Appearance:  </li>
-         </ul><br>
-      <li>Batch# 3</li>
-         <ul>
-            <li>Texture: </li>
-            <li>Taste: </li>
-            <li>Appearance: </li>
-         </ul><br>
-      <li>Batch# 4</li>
-         <ul>
-            <li>Texture: </li>
-            <li>Taste: </li>
-            <li>Appearance: </li>
-         </ul>
-   </ul>
-   <hr>
-
-   <h3>Recommendations</h3>
-   <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-   </ul>
-   <hr>
-
-   <h3>References</h3>
-   <ul>
-      <li><a href="http://www.bakewithannaolson.com/fluffy-vanilla-cupcakes.html" target="_blank">Olson, A. (2018). Bake with Anna Olson. Fluffy Vanilla Cupcakes. Retrieved from http://www.bakewithannaolson.com/fluffy-vanilla-cupcakes.html</li>
-      <li><a href="https://www.marthastewart.com/341302/vanilla-frosting" target="_blank">Stewart, M. (2018). martha stewart. Vanilla Frosting. Retrieved from https://www.marthastewart.com/341302/vanilla-frosting</li>
-      <li><a href="https://thestayathomechef.com/vanilla-cupcake-recipe" target="_blank">Farnsworth, R. (2018). The Stay at Home Chef. THE MOST AMAZING VANILLA CUPCAKE RECIPE. Retrieved from https://thestayathomechef.com/vanilla-cupcake-recipe/</li>
-      <li><a href="https://www.allrecipes.com/recipe/7674/coffee-icing" target="_blank">Carol. (2018). allrecipes. Coffee Icing. Retrieved from https://www.allrecipes.com/recipe/7674/coffee-icing/</li>
-   </ul>
-   <hr>
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcupcakesattempt2/7.1.jpg" class="bigpic"><img src="./images/bakedcupcakesattempt2/7.1.jpg" alt="step 7" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>7) I removed every batch of cupcakes that were baked from the oven and transferred to a steel wire rack to cool completely.</p>
+                
+              </div>
+            </div>
+         </div>
 
    
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcupcakesattempt2/8.1.jpg" class="bigpic"><img src="./images/bakedcupcakesattempt2/8.1.jpg" alt="step 8" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>8) I sliced the Cavendish bananas and mashed with a potato masher. Then I stored the bananas in the refrigerator for about 30 minutes to bring out their vanilla flavor. Each bowl had 141 g bananas.</p>               
+              </div>
+            </div>
+         </div>
 
-   <a href="./bakedcupcakesattempt1.html"><button>1</button></a>
-   <a href="./bakedcupcakesattempt2.html"><button>2</button></a>
-   
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcupcakesattempt2/9.1.jpg" class="bigpic"><img src="./images/bakedcupcakesattempt2/9.1.jpg" alt="step 9" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>9) For the frosting, I mixed together the confectioner sugar, the Cavendish bananas from the refrigerator, brewed instant coffee, and butter:
+                <ul>
+                  <li>Frosting Mixture #1: 1/8 g unsalted butter + ¾ cup confectioner sugar + 2 tablespoons brewed Blend 45 instant coffee + 124 g mashed Cavendish bananas</li>
+                  <li>Frosting Mixture #2: 1/8 g unsalted butter + ¾ cup confectioner sugar + 2 tablespoons brewed Blend 45 instant coffee + 74 g mashed Cavendish bananas</li>
+                </ul>
+                </p>             
+              </div>
+             </div>
 
- <small><i class="far fa-copyright"></i>COPYRIGHT 2018 ALL RIGHTS RESERVED. THE FOODIE CRAFTSMAN. This website is for educational purposes only.</small>
+         </div>
 
-   <small>CONTACT US</small>
-   <small>Email: thefoodiecraftsman@gmail.com | Tel: +639178151032
-    
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcupcakesattempt2/10.1.jpg" class="bigpic"><img src="./images/bakedcupcakesattempt2/10.1.jpg" alt="step 10" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>10) I placed around one table spoon of the filling on top of each baked cupcake and cooled all the cupcakes in the refrigerator.
+                <ul>
+                  <li>Storage time: Saturday 6:00 PM until Monday 4:45 PM</li>
+                </ul>
+                </p>
+               
+              </div>
+             </div>
+
+         </div>
+          <hr>
+         <!-- Feedback -->
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+               <h3>Feedback</h3>
+               <ul>
+                  <li>Texture - the consistency for batch 4-2 was still too mushy </li>
+                  <li>Taste and Flavor - lacks saltiness, still persistent candy like flavor, sweetness is overboard for icing</li>
+                  <li>Appearance - looks as dense as bread and it is fine for the cake</li>
+               </ul>
+               <hr>
+            </div>
+         </div>
+
+         <!-- Recommendations -->
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+               <h3>Recommendations</h3>
+               <ul>
+                  <li>Remove confectioner’s sugar or lessen it to ¼ cup </li>
+                  <li>Butter must be salted </li>
+                  <li>Decorate the top with banana slices</li>
+               </ul>
+               <hr>
+            </div>
+         </div>
+         <!-- References -->
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+               <h3>References</h3>
+               <ul>
+                  <li><a href="http://www.bakewithannaolson.com/fluffy-vanilla-cupcakes.html" target="_blank">Olson, A. (2018). Bake with Anna Olson. Fluffy Vanilla Cupcakes. Retrieved from http://www.bakewithannaolson.com/fluffy-vanilla-cupcakes.html</a></li>
+                  <li><a href="https://www.marthastewart.com/341302/vanilla-frosting" target="_blank">Stewart, M. (2018). martha stewart. Vanilla Frosting. Retrieved from https://www.marthastewart.com/341302/vanilla-frosting</a></li>
+                  <li><a href="https://thestayathomechef.com/vanilla-cupcake-recipe" target="_blank">Farnsworth, R. (2018). The Stay at Home Chef. THE MOST AMAZING VANILLA CUPCAKE RECIPE. Retrieved from https://thestayathomechef.com/vanilla-cupcake-recipe/</a></li>
+                  <li><a href="https://www.allrecipes.com/recipe/7674/coffee-icing" target="_blank">Carol. (2018). allrecipes. Coffee Icing. Retrieved from https://www.allrecipes.com/recipe/7674/coffee-icing/</a></li>
+               </ul>
+               <hr>
+            </div>
+         </div>
+         <div class="row clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+                <br>
+             
+
+              <!-- Back to top button -->
+                <a href="./bakedcupcakesattempt2.html" class="button"><button>Get back up</button></a>
+            </div>
+              
+         </div>
+      </div>
+
+
+  <!-- footer section -->
+     <div class="container-fluid" id="footer-container">
+      <div class="row clear">
+          <div class="section footer col-lg-12 col-md-12 col-sm-12">
+              <small><i class="far fa-copyright"></i>COPYRIGHT 2018 ALL RIGHTS RESERVED. THE FOODIE CRAFTSMAN. This website is for educational purposes only.</small>
+              <hr>
+              <a href="https://www.facebook.com/The-Foodie-Craftsman-299889067277926/?modal=admin_todo_tour" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="https://www.instagram.com/thefoodiecraftsman/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="https://twitter.com/?precache=1" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+      </div>
+     </div>
+   </div>
+
 </body>
 
 </html>

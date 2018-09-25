@@ -2,11 +2,18 @@
 <html>
 <head>
 	<meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-    <!--<link rel="stylesheet" type="text/css" href="./assets/css/welcome.css">-->
+    <!-- personal css -->
+    <link rel="stylesheet" type="text/css" href="./style/dishes.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <!-- Javascript -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"
@@ -19,39 +26,143 @@
 	<title>Dishes</title>
 </head>
 <body>
-   <img src="../assets/images/maintitle.jpg" alt="home page main title">
-   <img src="../assets/images/mainicon.jpg" alt="home page main logo">
-   <i class="far fa-search"></i><form action="method">
-   	  <input type="text" name="search" placeholder="search">
-   </form>
-   <a href="https://www.facebook.com/The-Foodie-Craftsman-299889067277926/?modal=admin_todo_tour" target="_blank"><button>Facebook</button></a>
-   <a href="https://www.instagram.com/thefoodiecraftsman/?hl=en" target="_blank"><button>Instagram</button></a>
-   <a href="https://twitter.com/CraftsmanFoodie" target="_blank"><button>Twitter</button></a>
-   <ul>
-   	  <li><a href="../welcome.html">Home</a></li>
-   	  <li><a href="../ingredients/ingredients1.html">Ingredients</li>
-   	  <li><a href="../equipment/equipment1.html">Equipment</a></li>
-   	  <li><a href="./dishes.html">Dishes</a></li>
-   	  <li><a href="../stores/stores.html">Stores</a></li>
-    </ul>
+  <div class="container-fluid" id="home-container">  
+    <!--navigation section -->
+    <div class="container-fluid" id="nav-container">
+      <div class="row clear">
+        <div class="section navigator col-lg-12 col-md-12 col-sm-12">
+             <!-- navbar -->
+             <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+             <!-- brand -->
+             <!-- nav-brand has built-in features stored in JS folder and will be passed on.-->
+             <a class="navbar-brand" href="#"></a>
+             <!-- end of brand -->
+             <!-- burger -->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+             <!--nav-toggler-icon gives an icon for burger-->
+             <span class="navbar-toggler-icon"></span>
+             </button>
+             <!-- end of burger -->
+             <!-- nav items -->
+             <div class="collapse navbar-collapse" id="navbar-nav">
+                <img src="../assets/images/mainicon.jpg" id="mainicon" alt="icon" width="80px" height="40px" class="center">
+                <img src="../assets/images/maintitle.jpg" id="maintitle" alt="home page main title" width="240px" height="90px" class="center">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../home.html"><i class="fas fa-home">Home</i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../about.html"><i class="fas fa-users">About Us</i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../contact.html"><i class="fas fa-phone">Contact Us</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dishes.html"><i class="fas fa-utensils">Dishes</i> 
+                       </a>                         
+                    </li>
 
-   <h1><strong>Dishes</strong></h1>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../ingredients/ingredients.html"><i class="fas fa-bong">Ingredients</i></a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="../equipment/equipment.html"><i class="fas fa-toolbox">Equipment</i></a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="../stores/stores.html"><i class="fas fa-store">Stores</i></a>
+                    </li>
+                
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+      </div>   
+      <!-- main section -->
+      <div class="container-fluid" id="main-container">
+        <!-- Baked Cookies with Softmallows -->
+        <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Picture at left side -->
+              <div class="leftside">
+                <a href="./images/bakedcookiesattempt2/9.1.jpg" class="bigpic"><img src="./images/bakedcookiesattempt2/9.1.jpg" alt="baked cookies" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!-- Description at right side -->
+              <div class="rightside">
+                <h3><a href="./bakedcookiesattempt2.html">Baked Cookies with Cacao Coating</a></h3>
+                <br>
+                <p>Instant Oatmeal is the main base for these cookies that have been baked in the oven and then later coated with melted cacao tablets and fluffy assorted softmallows.</p>
+                <br>
+                <p><a href="./bakedcookiesattempt2.html">Read More</a></p>
+              </div>
+            </div>
+        </div>
+        <!-- Baked Cupcakes with Frosting -->
+        <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Picture at left side -->
+              <div class="leftside">
+                <a href="./images/bakedcupcakesattempt2/10.1.jpg" class="bigpic"><img src="./images/bakedcupcakesattempt2/10.1.jpg" alt="baked cupcakes" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!-- Description at right side -->
+              <div class="rightside">
+                <h3><a href="./bakedcupcakesattempt2.html">Baked Cupcakes with Banana Frosting</a></h3>
+                <br>
+                <p>A mini-version of a cake that has been baked until fluffy and moist. They have been topped with frosting composed of mashed cavenish bananas and instant Blend45 coffee.</p>
+                <br>
+                <p><a href="./bakedcupcakesattempt2.html">Read More</a></p>
+              </div>
+             </div>
+        </div>
+        <!-- Baked Potatoes with Cheese Sauce -->
+        <div class="row-fluid clear"> 
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Picture at left side -->
+              <div class="leftside">
+                <a href="./images/bakedpotatoesattempt2/4.3.jpg" class="bigpic"><img src="./images/bakedpotatoesattempt2/4.3.jpg" alt="baked potato wedges" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!-- Description at right side -->
+              <div class="rightside">
+                <h3><a href="./bakedpotatoesattempt2.html">Baked Potato Wedges with Cheese Sauce</a></h3>
+                <br>
+                <p>The wedges were a result of slicing white potatoes and then coated with vegetable oil. They are soft in the inside and crispy on the outside and comes with melted cheese sauce.</p>
+
+                <br>
+                <p><a href="./bakedpotatoesattempt2.html">Read More</a></p>
+              </div>
+            </div>
+        </div>
+
+        <div class="row clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+                <br>
+             
+
+              <!-- Back to top button -->
+                <a href="./dishes.html" class="button"><button>Get back up</button></a>
+            </div>
+              
+          </div>
+     </div>
+
    
-   <img src="./images/bakedcookiesattempt2/9.1.jpg" alt="baked cookies">
-   <h3><a href="./bakedcookiesattempt1.html">Baked Cookies with Marshmallows</a></h3>
 
-   <img src="./images/bakedcupcakesattempt2/10.1.jpg" alt="baked cupcakes">
-   <h3><a href="./bakedcupcakesattempt1.html">Baked Cupcakes with Banana Frosting</a></h3>
+    <!-- footer section -->
+     <div class="container-fluid" id="footer-container">
+      <div class="row clear">
+          <div class="section footer col-lg-12 col-md-12 col-sm-12">
+              <small><i class="far fa-copyright"></i>COPYRIGHT 2018 ALL RIGHTS RESERVED. THE FOODIE CRAFTSMAN. This website is for educational purposes only.</small>
+              <hr>
+              <a href="https://www.facebook.com/The-Foodie-Craftsman-299889067277926/?modal=admin_todo_tour" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="https://www.instagram.com/thefoodiecraftsman/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="https://twitter.com/?precache=1" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+      </div>
+     </div>
+    </div>
 
-   <img src="./images/bakedpotatoesattempt2/4.3.jpg" alt="baked potato wedges">
-   <h3><a href="./bakedpotatoesattempt1.html">Baked Potato Wedges with Cheese Sauce</a></h3>
-
-
-   <small><i class="far fa-copyright"></i>COPYRIGHT 2018 ALL RIGHTS RESERVED. THE FOODIE CRAFTSMAN. This website is for educational purposes only.</small>
-
-   <small>CONTACT US</small>
-   <small>Email: thefoodiecraftsman@gmail.com | Tel: +639178151032
-    
 </body>
 
 </html>

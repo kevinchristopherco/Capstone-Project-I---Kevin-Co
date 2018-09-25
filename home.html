@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+    <!-- personal css -->
+    <link rel="stylesheet" type="text/css" href="./assets/style/home.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+
+    <!-- Javascript -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap.js -->
+    <script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+	<title>Home</title>
+</head>
+<body>
+  <div class="container-fluid" id="home-container">
+  	
+    <!--navigation section -->
+    <div class="container-fluid" id="nav-container">
+      <div class="row clear">
+        <div class="section navigator col-lg-12 col-md-12 col-sm-12">
+    	     <!-- navbar -->
+    	     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+       		 <!-- brand -->
+       		 <!-- nav-brand has built-in features stored in JS folder and will be passed on.-->
+       		 <a class="navbar-brand" href="#"></a>
+       		 <!-- end of brand -->
+        	 <!-- burger -->
+       		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+           <!--nav-toggler-icon gives an icon for burger-->
+       	   <span class="navbar-toggler-icon"></span>
+       		 </button>
+        	 <!-- end of burger -->
+        	 <!-- nav items -->
+        	 <div class="collapse navbar-collapse" id="navbar-nav">
+              <img src="./assets/images/mainicon.jpg" id="mainicon" alt="icon" width="80px" height="40px" class="center">
+              <img src="./assets/images/maintitle.jpg" id="maintitle" alt="home page main title" width="240px" height="90px" class="center">
+        		  <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html"><i class="fas fa-home">Home</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html"><i class="fas fa-users">About Us</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html"><i class="fas fa-phone">Contact Us</i></a>
+                </li>
+                 <li class="nav-item">
+
+                        <a class="nav-link" href="./dishes/dishes.html"><i class="fas fa-utensils">Dishes</i> 
+                       </a>                       
+                        
+                   </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./ingredients/ingredients.html"><i class="fas fa-bong">Ingredients</i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./equipment/equipment.html"><i class="fas fa-toolbox">Equipment</i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./stores/stores.html"><i class="fas fa-store">Stores</i></a>
+                </li>
+                
+              </ul>
+        	  </div>
+    	     </nav>
+        </div>
+      </div>
+    </div>   
+    <!-- main section -->
+    <div class="container-fluid" id="main-container">
+      <div class="row clear">
+        <div class="section main col-lg-12 col-md-12 col-sm-12">
+          <br>
+          <br>
+          <h1><strong>WELCOME</strong></h1>
+          <p>Welcome to The Foodie Craftsman! This serves as a place where food is the main topic of interest.</p>
+
+          <p>Gain new knowledge on the various concepts of food by visiting the various sections that comprise this food blog site:</p>
+          <br>
+
+          <!--Carousel-->
+          <div id="sampleCarousel" class="carousel slide" data-ride="carousel">
+            <!--indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- wrapper for slides -->
+            <div class="carousel-inner">
+                <!-- Dishes -->
+                <div class="carousel-item active">
+                    <img src="./dishes/images/bakedpotatoesattempt2/4.3.jpg" width="860" height="510" class="img-fluid">
+                    <div class="carousel-caption">
+                        <br>
+                        <br>
+                        <h3>Dishes</h3>
+                        <p class="sectiontext"><strong>This section showcases dishes conceived mainly through baking. </strong></p>
+                    </div>
+                </div>
+                <!-- Ingredients -->
+                <div class="carousel-item">
+                    <img src="./dishes/images/bakedcupcakesattempt2/3.2.jpg" width="860" height="510" class="img-fluid">
+                    <div class="carousel-caption">
+                         <h3>Ingredients</h3>
+                         <p class="sectiontext"><strong>This section talks about the components used in making the featured dishes.</strong></p>
+                    </div>
+                </div>
+                <!-- Equipment -->
+                <div class="carousel-item">
+                    <img src="./equipment/images/icecreamscooper.jpg" width="860" height="510" class="img-fluid">
+                    <div class="carousel-caption">
+                         <h3>Equipment</h3>
+                         <p class="sectiontext"><strong>This section focuses on the tools that assisted me in creating the dishes.</strong></p>
+                    </div>
+                </div>
+                <!-- Stores -->
+                <div class="carousel-item">
+                    <img src="./stores/images/chocolatelovers1.jpg" width="860" height="510" class="img-fluid">
+                    <div class="carousel-caption">
+                       <h3>Stores</a></h3>
+                        <p class="sectiontext"><strong>This section features the places where the needed ingredients were available.</strong></p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#sampleCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a> <a class="carousel-control-next" href="#sampleCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            
+        </div>
+
+          <br>
+          <br>
+                <!-- Back to top button -->
+                <a href="./home.html" class="button"><button>Get back up</button></a>
+         
+       </div>
+
+      </div>
+    </div>
+
+   <!-- footer section -->
+   <div class="container-fluid" id="footer-container">
+    <div class="row clear">
+      <div class="section footer col-lg-12 col-md-12 col-sm-12">
+        <small><i class="far fa-copyright"></i>COPYRIGHT 2018 ALL RIGHTS RESERVED. THE FOODIE CRAFTSMAN. This website is for educational purposes only.</small>
+        <hr>
+        <a href="https://www.facebook.com/The-Foodie-Craftsman-299889067277926/?modal=admin_todo_tour" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+  	    <a href="https://www.instagram.com/thefoodiecraftsman/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+  	    <a href="https://twitter.com/?precache=1" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

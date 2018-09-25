@@ -2,116 +2,322 @@
 <html>
 <head>
   <meta charset="utf-8">
-    <meta name="viewport" content="width=device=width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <!--<link rel="stylesheet" type="text/css" href="./css/ingredients1.css">-->
-  <title>Dishes</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <!-- personal css -->
+    <link rel="stylesheet" type="text/css" href="./style/bakedcookiesattempt2.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <!-- Javascript -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap.js -->
+    <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+  <title>Baked Cookies with Cacao Coating</title>
 </head>
 <body>
-   <img src="../assets/images/maintitle.jpg" alt="home page main title">
-   <img src="../assets/images/mainicon.jpg" alt="home page main logo">
-   <i class="far fa-search"></i><form action="method">
-      <input type="text" name="search" placeholder="search">
-   </form>
-   <a href="https://www.facebook.com/The-Foodie-Craftsman-299889067277926/?modal=admin_todo_tour" target="_blank"><button>Facebook</button></a>
-   <a href="https://www.instagram.com/thefoodiecraftsman/?hl=en" target="_blank"><button>Instagram</button></a>
-   <a href="https://twitter.com/CraftsmanFoodie" target="_blank"><button>Twitter</button></a>
-   <ul>
-      <li><a href="../welcome.html">Home</a></li>
-      <li><a href="../ingredients/ingredients1.html">Ingredients</li>
-      <li><a href="../equipment/equipment1.html">Equipment</a></li>
-      <li><a href="./dishes.html">Dishes</a></li>
-      <li><a href="../stores/stores.html">Stores</a></li>
-    </ul>
+   <div class="container-fluid" id="home-container">  
+    <!--navigation section -->
+    <div class="container-fluid" id="nav-container">
+      <div class="row clear">
+        <div class="section navigator col-lg-12 col-md-12 col-sm-12">
+             <!-- navbar -->
+             <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+             <!-- brand -->
+             <!-- nav-brand has built-in features stored in JS folder and will be passed on.-->
+             <a class="navbar-brand" href="#"></a>
+             <!-- end of brand -->
+             <!-- burger -->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+             <!--nav-toggler-icon gives an icon for burger-->
+             <span class="navbar-toggler-icon"></span>
+             </button>
+             <!-- end of burger -->
+             <!-- nav items -->
+             <div class="collapse navbar-collapse" id="navbar-nav">
+                <img src="../assets/images/mainicon.jpg" id="mainicon" alt="icon" width="80px" height="40px" class="center">
+                <img src="../assets/images/maintitle.jpg" id="maintitle" alt="home page main title" width="240px" height="90px" class="center">
+                   <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../home.html" id="homes"><i class="fas fa-home">Home</i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../about.html" id="abouts"><i class="fas fa-users">About Us</i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../contact.html" id="contacts"><i class="fas fa-phone">Contact Us</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dishes.html" id="dishes"><i class="fas fa-utensils">Dishes</i> 
+                       </a>                         
+                    </li>
 
-   <h1><strong>Dishes</strong></h1>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../ingredients/ingredients.html" id="ingredients"><i class="fas fa-bong">Ingredients</i></a>
+                    </li>
 
-   <h2>Baked Cookies with Marshmallows (Attempt #2)
+                    <li class="nav-item">
+                      <a class="nav-link" href="../equipment/equipment.html" id="equipments"><i class="fas fa-toolbox">Equipment</i></a>
+                    </li>
 
-   <h3>Ingredients</h3>
-   <ul>
-      <li>3/4  cup / 151 g butter, unsalted (Magnolia Butter)</li>
-      <li>½ cup / 125 ml muscovado sugar (Nature’s Muscovado Specialty Sugar)</li>
-      <li>½ cup / 125 ml coco sugar (Coco Natural Organic Coco Sugar)</li>
-      <li>1 piece. whole egg at room temperature</li>
-      <li>1 tsp. vanilla extract (McCormick Vanilla Flavor)</li>
-      <li>¼ cup high fructose Corn Syrup (Peotraco)</li>
-      <li>2 cups all purpose flour (Magnolia Flour)</li>
-      <li>2 cups oatmeal (Quaker Instant Oatmeal Original)</li>
-      <li>2 teaspoon cocoa (Peotraco Premium Cocoa Powder)</li>
-      <li>6 tablespoon marshmallows (Mello Fluffy Assorted Softmallow)</li>
-      <li>200g cacao tablets (Alfonso’s Hot Chocolate Tablea)</li>
-      <li>750 ml Cream (Nestle All Purpose Cream)</li>
-      <li>1 teaspoon. baking soda (Arm & Hammer Pure Baking Soda)</li>
-      <li>1 teaspoon baking powder (Queen Double Acting Baking Powder)</li>
-      <li>½ teaspoon iodized fine salt (McCormick Iodized Salt)</li>
-   </ul>
-   <hr>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../stores/stores.html" id="stores"><i class="fas fa-store">Stores</i></a>
+                    </li>
+                </div>
+              </nav>
+            </div>
+          </div>
+      </div>   
+
+      <!-- main section -->
+      <div class="container-fluid" id="main-container">
+        <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+               <h1>Baked Cookies with Cacao Coating</h1>
+               <br>
+               <hr>
+            </div>
+         </div>
+         <!-- List of Ingredients -->
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">          
+               <h3>Ingredients</h3>
+               <ul>
+                  <li>3/4  cup / 151 g butter, unsalted (Magnolia Butter)</li>
+                  <li>½ cup / 125 ml muscovado sugar (Nature’s Muscovado Specialty Sugar)</li>
+                  <li>½ cup / 125 ml coco sugar (Coco Natural Organic Coco Sugar)</li>
+                  <li>1 piece. whole egg at room temperature</li>
+                  <li>1 tsp. vanilla extract (McCormick Vanilla Flavor)</li>
+                  <li>¼ cup high fructose Corn Syrup (Peotraco)</li>
+                  <li>2 cups all purpose flour (Magnolia Flour)</li>
+                  <li>2 cups oatmeal (Quaker Instant Oatmeal Original)</li>
+                  <li>2 teaspoon cocoa (Peotraco Premium Cocoa Powder)</li>
+                  <li>6 tablespoon marshmallows (Mello Fluffy Assorted Softmallow)</li>
+                  <li>200g cacao tablets (Alfonso’s Hot Chocolate Tablea)</li>
+                  <li>750 ml Cream (Nestle All Purpose Cream)</li>
+                  <li>1 teaspoon. baking soda (Arm & Hammer Pure Baking Soda)</li>
+                  <li>1 teaspoon baking powder (Queen Double Acting Baking Powder)</li>
+                  <li>½ teaspoon iodized fine salt (McCormick Iodized Salt)</li>
+               </ul>
+               <hr>
+               <br>
+            </div>
+         </div>
+         <!-- Procedure -->
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+               <h3>Procedure</h3>
+            </div>
+         </div>
+         <!-- Image of step at the left side -->
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <div class="leftside">
+                <a href="./images/bakedcookiesattempt2/1.1.jpg" class="bigpic"><img src="./images/bakedcookiesattempt2/1.1.jpg" alt="step 1" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>1) The butter and sugar, both at room temperature, were first mixed together until they became light and fluffy using white plastic spatula.</p>
+                
+              </div>
+             </div>
+         </div>
    
-   <h3>Procedure</h3>
-   <ol>
-      <li>The butter and sugar, both at room temperature, were first mixed together until they became light and fluffy using white plastic spatula. </li>
-      <img src="./images/bakedcookiesattempt2/1.1.jpg" alt="step 1"><br>
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcookiesattempt2/2.1.jpg" class="bigpic"><img src="./images/bakedcookiesattempt2/2.1.jpg" alt="step 2" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>2) The eggs, the vanilla extract and the corn syrup were then added to the butter- sugar mixture until well-blended.</p>
+                
+              </div>
+             </div>
+         </div>
 
-      <li>The eggs, the vanilla extract and the corn syrup were then added to the butter- sugar mixture until well-blended.</li>
-      <img src="./images/bakedcookiesattempt2/2.1.jpg" alt="step 2"><br>
 
-      <li>The flour, baking soda, baking powder were all sifted using a strainer. On a separate bowl, the dry ingredients were combined together: flour, oatmeal, cinnamon powder, baking soda, baking powder, fine salt.</li>
-      <img src="./images/bakedcookiesattempt2/3.1.jpg" alt="step 3"><br>
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcookiesattempt2/3.1.jpg" class="bigpic"><img src="./images/bakedcookiesattempt2/3.1.jpg" alt="step 3" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>3) The flour, baking soda, baking powder were all sifted using a strainer. On a separate bowl, the dry ingredients were combined together: flour, oatmeal, cinnamon powder, baking soda, baking powder, fine salt.</p>
+                
+              </div>
+             </div>
+         </div>
 
-      <li>Afterwards, the wet and dry ingredients were combined and mixed until the new mixture became doughy.</li>
-      <img src="./images/bakedcookiesattempt2/4.1.jpg" alt="step 4"><br>
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcookiesattempt2/4.1.jpg" class="bigpic"><img src="./images/bakedcookiesattempt2/4.1.jpg" alt="step 4" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">             
+                <p>4) Afterwards, the wet and dry ingredients were combined and mixed until the new mixture became doughy.</p>
+                
+              </div>
+             </div>
+         </div>
 
-      <li>For the coating, the cacao tablets were melted in hot cream for 20 minutes at 25 degrees Celsius until the texture became brownish liquid. The liquid was placed on a small bowl. The marshmallows were sliced to small bits and added to the cacao liquid and the bowl was stored in the refrigerator for cooling.</li>
-      <img src="./images/bakedcookiesattempt2/5.1.jpg" alt="step 5"><br>
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcookiesattempt2/5.1.jpg" class="bigpic"><img src="./images/bakedcookiesattempt2/5.1.jpg" alt="step 5"  width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>5) For the coating, the cacao tablets were melted in hot cream for 20 minutes at 25 degrees Celsius until the texture became brownish liquid. The liquid was placed on a small bowl. The marshmallows were sliced to small bits and added to the cacao liquid and the bowl was stored in the refrigerator for cooling.</p>
+                
+              </div>
+             </div>
+         </div>
 
-      <li>The dough mixture was molded into small circular shaped pieces using an ice cream scooper.</li>
-      <img src="./images/bakedcookiesattempt2/6.1.jpg" alt="step 6"><br>
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcookiesattempt2/6.1.jpg" class="bigpic"><img src="./images/bakedcookiesattempt2/6.1.jpg" alt="step 6" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>6) The dough mixture was molded into small circular shaped pieces using an ice cream scooper.</p>
+                
+              </div>
+             </div>
+         </div>
 
-      <li>2 sheets of non-stick wax paper were placed on 2 metal baking trays. Salted butter was brushed on the baking trays so that the cookie batter would not stick.</li>
-      <img src="./images/bakedcookiesattempt2/7.1.jpg" alt="step 7"><br>
-
-      <li>The cookies were baked in batches of 2 with 12 cookies per batch. Batch 1 was baked for 14:30 minutes while Batch 2 was baked for 15:00 minutes. </li>
-      <img src="./images/bakedcookiesattempt2/8.1.jpg" alt="step 8"><br>
-
-      <li>Each baked cookie was dipped into the bowl containing the cacao and marshmallows to give it a glazed look and was stored in the refrigerator so that the melted cacao marshmallow mixture coating would solidify. </li>
-      <img src="./images/bakedcookiesattempt2/9.1.jpg" alt="step 9">
-   </ol>
-   <hr>
-
-   <h3>Feedback</h3>
-   <ul>
-      <li>Texture - soft/high moisture content so difficult to handle and pack. </li>
-      <li>Taste and Flavor - almost perfect balance.</li>
-      <li>Appearance - still not very appealing as the cookies appear too wet</li>
-   </ul>
-   <hr>
-
-   <h3>Recommendations</h3>
-   <ul>
-      <li>Cookies can be baked in four batches. Each batch of cookies will have a different baking time. </li>
-      <li>It is better to take a tablespoon of cacao mixture and spread it on a plate. Then a cookie can be mopped on the mixture to make it less wet. Perhaps a set of cookies can receive a full coating and other set can receive a full coating of the cacao mixture.</li>
-      <li>To have a better tasting of the cacao mixture, it can be melted on 500 ml of cream instead of 700 ml.</li>
-   </ul>
-   <hr>
-
-   <h3>References</h3>
-   <ul>
-      <li><a href="http://www.katiescucina.com/2013/04/blueberry-oatmeal-marshmallow-cookies" target="_blank">Jasiewicz, K. (2018). Katie's Cucina. Blueberry Oatmeal Marshmallow Cookies. Retrieved from http://www.katiescucina.com/2013/04/blueberry-oatmeal-marshmallow-cookies/</li>
-   </ul>
-   <hr>
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcookiesattempt2/7.1.jpg" class="bigpic"><img src="./images/bakedcookiesattempt2/7.1.jpg" alt="step 7" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>7) 2 sheets of non-stick wax paper were placed on 2 metal baking trays. Salted butter was brushed on the baking trays so that the cookie batter would not stick.</p>
+                
+              </div>
+            </div>
+         </div>
 
    
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcookiesattempt2/8.1.jpg" class="bigpic"><img src="./images/bakedcookiesattempt2/8.1.jpg" alt="step 8" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>8) The cookies were baked in batches of 2 with 12 cookies per batch. Batch 1 was baked for 14 minutes and 30 seconds while Batch 2 was baked for 15 minutes.</p>               
+              </div>
+            </div>
+         </div>
 
-   <a href="./bakedcookiesattempt1.html"><button>1</button></a>
-   <a href="./bakedcookiesattempt2.html"><button>2</button></a>
-   
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+              <!-- Image of step at the left side -->
+              <div class="leftside">
+                <a href="./images/bakedcookiesattempt2/9.1.jpg" class="bigpic"><img src="./images/bakedcookiesattempt2/9.1.jpg" alt="step 9" width="450px" height="350px" class="img-fluid"></a>
+              </div>
+              <!--Description of step at right side -->
+              <div class="rightside">
+                
+                <p>9) Each baked cookie was dipped into the bowl containing the cacao and marshmallows to give it a glazed look and was stored in the refrigerator so that the melted cacao softmallow mixture coating would solidify.</p>
+               
+              </div>
+             </div>
 
- <small><i class="far fa-copyright"></i>COPYRIGHT 2018 ALL RIGHTS RESERVED. THE FOODIE CRAFTSMAN. This website is for educational purposes only.</small>
+         </div>
+          <hr>
+         <!-- Feedback -->
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+               <h3>Feedback</h3>
+               <ul>
+                  <li>Texture - soft/high moisture content and so difficult to handle and pack. </li>
+                  <li>Taste and Flavor - almost perfect balance.</li>
+                  <li>Appearance - not very appealing as the cookies appear too wet</li>
+               </ul>
+               <hr>
+            </div>
+         </div>
 
-   <small>CONTACT US</small>
-   <small>Email: thefoodiecraftsman@gmail.com | Tel: +639178151032
-    
+         <!-- Recommendations -->
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+               <h3>Recommendations</h3>
+               <ul>
+                  <li>Cookies can be baked in four batches. Each batch of cookies will have a different baking time. </li>
+                  <li>It is better to take a tablespoon of cacao mixture and spread it on a plate. Then a cookie can be mopped on the mixture to make it less wet. Perhaps a set of cookies can receive a full coating and the other set can receive a full coating of the cacao mixture.</li>
+                  <li>To have a better tasting of the cacao mixture, it can be melted on 500 ml of cream instead of 700 ml.</li>
+               </ul>
+               <hr>
+            </div>
+         </div>
+        <!-- References -->
+         <div class="row-fluid clear">
+            <div class="section main col-lg-12 col-md-12 col-sm-12">
+               <h3>References</h3>
+               <ul>
+                  <li><a href="http://www.katiescucina.com/2013/04/blueberry-oatmeal-marshmallow-cookies" target="_blank">Jasiewicz, K. (2018). Katie's Cucina. Blueberry Oatmeal Marshmallow Cookies. Retrieved from http://www.katiescucina.com/2013/04/blueberry-oatmeal-marshmallow-cookies/</a></li>
+               </ul>
+               <hr>
+            </div>
+         </div>
+      
+
+         <div class="row-fluid clear">
+            <div class="section main backtop col-lg-12 col-md-12 col-sm-12">
+                <br>
+             
+                <!-- Back to top button -->
+                <a href="./bakedcookiesattempt2.html" class="button"><button>Get back up</button></a>
+            </div>
+              
+         </div>
+     </div>
+
+
+     <!-- footer section -->
+     <div class="container-fluid" id="footer-container">
+      <div class="row clear">
+          <div class="section footer col-lg-12 col-md-12 col-sm-12">
+              <small><i class="far fa-copyright"></i>COPYRIGHT 2018 ALL RIGHTS RESERVED. THE FOODIE CRAFTSMAN. This website is for educational purposes only.</small>
+              <hr>
+              <a href="https://www.facebook.com/The-Foodie-Craftsman-299889067277926/?modal=admin_todo_tour" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="https://www.instagram.com/thefoodiecraftsman/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="https://twitter.com/?precache=1" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+      </div>
+     </div>
+   </div>
+
 </body>
 
 </html>
